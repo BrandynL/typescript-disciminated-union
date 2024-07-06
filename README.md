@@ -4,7 +4,13 @@ Discriminated unions are a powerful utility that can help you keep your code clo
 These features are already present in javascript/typescript, but this library aims to standardize your implementation, making unions easier to implement and interact with, while leaving a small footprint at less than 50KB.
 
 ## How to use
-1. Create discriminated union type
+
+Install via NPM
+```sh
+npm i --save typescript-discriminated-union
+```
+
+1. Create a discriminated union type
 ```typescript
 
 import { DiscriminatedUnion, Union } from 'typescript-discriminated-union'
@@ -42,7 +48,7 @@ handleDiscriminatedUnion({
 ```
 
 ## Other use-cases
-- This can be especially helpful when consuming unions in react via a react component
+- This can be especially helpful when consuming unions in react via React components
 ```typescript
 export const DiscriminatedUnionHandler = <
   V extends {},
@@ -59,9 +65,9 @@ export const DiscriminatedUnionHandler = <
 )
 ```
 
-By specifying the Treturn of the DiscriminatedUnionProps, you can limit the return type of your implementation
+By specifying the `TReturn` of the `DiscriminatedUnionProps`, you can limit the return type of your implementation.
 
-- This implementation requires each union's config to return a promise
+Consider the following implementation which requires each union's config to return a promise:
 
 ```typescript
 export const DiscriminatedUnionHandler = <

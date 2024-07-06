@@ -1,6 +1,8 @@
 import { DiscriminatedUnion, Union } from './types'
-
-type DiscriminatedUnionProps<
+/**
+ * @description useful for composing your own discriminated union handling utilities
+ */
+export type DiscriminatedUnionProps<
   V extends {},
   K extends string,
   T extends Union<K, V>[],
