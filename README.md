@@ -97,3 +97,16 @@ Feel free to fork the [official repository](https://github.com/BrandynL/typescri
 ## Questions
 
 Questions can be posted via GitHub issues on the [official repository](https://github.com/BrandynL/typescript-disciminated-union).
+
+## Publishing
+
+Test the build prior to publishing
+> `npm run prepublish`
+
+Update the version
+> `npm version [major|minor|patch|<version>|etc..]`
+
+*run `npm version --help` for more info*
+
+Publish the package
+> `npm publish`
