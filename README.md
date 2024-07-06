@@ -86,6 +86,14 @@ export const DiscriminatedUnionHandler = <
 
 Feel free to fork the [official repository](https://github.com/BrandynL/typescript-disciminated-union) and submit a pull request with your proposal for changes. Please include a dscriptive summary of the changes you are making, and why you feel they should be implemented.
 
+#### Testing your changes locally
+1. Build the production files
+> `npm run prepublish`
+2. Make the package available locally
+> `npm link`
+3. Create a seperate project and add the local package
+> `npm link typescript-discriminated-union`
+
 ## Questions
 
 Questions can be posted via GitHub issues on the [official repository](https://github.com/BrandynL/typescript-disciminated-union).
