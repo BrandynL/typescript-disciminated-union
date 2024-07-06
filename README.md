@@ -76,7 +76,7 @@ export const DiscriminatedUnionHandler = <
   T extends Union<K, V>[],
   U extends DiscriminatedUnion<T>,
 >(
-  props: DiscriminatedUnionProps<V, K, T, U, Promise>
+  props: DiscriminatedUnionProps<V, K, T, U, Promise<any>>
 ) => (
   handleDiscriminatedUnion(props)
 )
